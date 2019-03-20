@@ -1,0 +1,22 @@
+.Secondary {
+  display: flex;
+  flex-direction: column;
+}
+
+.Secondary > *:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.SecondaryBody {
+  flex: 1;
+}
+
+.SecondaryHeading {
+  font-size: 3rem;
+}
+
+.SecondaryImg {
+  height: 17rem;
+  border-radius: 5px;
+  width: 100%;
+}

@@ -1,0 +1,21 @@
+.Update {
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.UpdateText {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.UpdateTextSub {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.87);
+} 

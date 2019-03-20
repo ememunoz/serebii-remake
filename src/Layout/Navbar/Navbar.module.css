@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+  color: #fff;
+}
+
+.searchIcon {
+  height: 16px;
+}
+
+.background {
+  background-color: #66AA72;
+}
+
+.logo,
+.logo:link,
+.logo:visited {
+  color: #fff;
+  font-family: 'Skranji';
+  font-size: 3rem;
+  text-decoration: none;
+}

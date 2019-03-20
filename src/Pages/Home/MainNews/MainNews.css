@@ -1,0 +1,8 @@
+.MainNews > * {
+  margin-bottom: 8px;
+}
+
+.MainNewsImage {
+  width: 100%;
+  border-radius: 5px;
+}

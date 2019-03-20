@@ -1,0 +1,6 @@
+.weeklyUpdates {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 2.4rem;
+  height: 100%;
+}

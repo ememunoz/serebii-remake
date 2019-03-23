@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './Container.css';
 
-const Container = props => {
+const Container = ({ children, style }) => {
   return (
-    <div className='Container' style={props.style}>
-      {props.children}
+    <div className='container' style={style}>
+      {children}
     </div>
   )
 }

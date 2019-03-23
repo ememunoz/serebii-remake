@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const SearchIcon = props => (
+const SearchIcon = ({ style }) => (
   <svg
-    style={props.style}
+    style={style}
     aria-hidden='true'
     focusable='false'
     role='img'

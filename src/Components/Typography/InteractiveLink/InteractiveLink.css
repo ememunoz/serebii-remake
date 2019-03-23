@@ -1,12 +1,10 @@
-.InteractiveLink,
-.InteractiveLink:link,
-.InteractiveLink:visited {
+.interactiveLink, .interactiveLink:link, .interactiveLink:visited {
     color: #2BB8ED;
     font-size: 1.6rem;
     font-weight: bold;
     text-decoration: none;
 }
-.InteractiveLink:active,
-.InteractiveLink:hover {
+
+.interactiveLink:active, .interactiveLink:hover {
     text-decoration: underline;
 }

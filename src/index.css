@@ -1,15 +1,14 @@
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-html {
-    /* This defines what 1rem is*/
-    font-size: 62.5%; /*  1 rem = 10px; 10px/16px = 62.5%  */
 
-    /* @include respond(tab-land) { /* // width < 1200? 
+html {
+  /* This defines what 1rem is*/
+  font-size: 62.5%;
+  /*  1 rem = 10px; 10px/16px = 62.5%  */
+  /* @include respond(tab-land) { /* // width < 1200? 
         font-size: 56.25%; /* 1 rem = 9px, 9/16 = 50% *
     }
 
@@ -25,16 +24,17 @@ html {
 body {
   background-color: #F7F7F7;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; 
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   /*@include respond(tab-port) {
       padding: 0;
   }*/
 }
 
 /* Global styles */
+
 .details {
-    color: rgba(50, 52, 56, 0.54);
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  color: rgba(50, 52, 56, 0.54);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }

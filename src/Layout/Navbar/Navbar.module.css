@@ -14,9 +14,7 @@
   background-color: #66AA72;
 }
 
-.logo,
-.logo:link,
-.logo:visited {
+.logo, .logo:link, .logo:visited {
   color: #fff;
   font-family: 'Skranji';
   font-size: 3rem;

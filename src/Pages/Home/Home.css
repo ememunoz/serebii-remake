@@ -1,6 +1,7 @@
 .homeLayout {
   display: grid;
-  grid-template-columns: 1000fr 618fr; /*close to golden ratio*/
+  /*close to golden ratio*/
+  grid-template-columns: 1000fr 618fr;
   grid-template-rows: auto auto;
   grid-gap: 4rem;
   padding: 4rem 0;

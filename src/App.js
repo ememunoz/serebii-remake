@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
+import styles from './App.module.css';
 
 import { BrowserRouter, Route } from 'react-router-dom';
 import Container from './Layout/Container/Container';
-
 import Forums from './Pages/Forums/Forums';
 import Games from './Pages/Games/Games';
 import Home from './Pages/Home/Home';
@@ -15,9 +15,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Fragment>
+        <div className={styles.appBackground}>
           <Navbar />
-          <Container style={{ backgroundColor: '#fff' }}>
+          <Container>
             <Route exact path="/" component={Home} />
             <Route path="/news" component={News} />
             <Route path="/games" component={Games} />
@@ -25,7 +25,7 @@ class App extends Component {
             <Route path="/pokedex" component={Pokedex} />
             <Route path="/forums" component={Forums} />
           </Container>
-        </Fragment>
+        </div>
       </BrowserRouter>
     );
   }

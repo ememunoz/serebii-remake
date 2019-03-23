@@ -10,7 +10,7 @@ import Container from '../Container/Container';
 const Navbar = props => {
   return (
     <div className={styles.background}>
-      <Container>
+      <Container style={{backgroundColor: 'transparent'}}>
         <nav className={styles.navbar}>
           <Link to='/' className={styles.logo}>Serebii.net</Link>
           <NavItems>

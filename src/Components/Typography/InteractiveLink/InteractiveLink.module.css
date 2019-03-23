@@ -1,0 +1,10 @@
+.interactiveLink, .interactiveLink:link, .interactiveLink:visited {
+    color: #0CA0D8;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.interactiveLink:active, .interactiveLink:hover {
+    text-decoration: underline;
+}

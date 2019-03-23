@@ -8,3 +8,14 @@
 .interactiveLink:active, .interactiveLink:hover {
     text-decoration: underline;
 }
+
+.interactiveLinkWhite, .interactiveLinkWhite:link, .interactiveLinkWhite:visited {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.interactiveLinkWhite:active, .interactiveLinkWhite:hover {
+    text-decoration: underline;
+}

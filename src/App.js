@@ -3,6 +3,7 @@ import styles from './App.module.css';
 
 import { BrowserRouter, Route } from 'react-router-dom';
 import Container from './Layout/Container/Container';
+import Footer from './Layout/Footer/Footer';
 import Forums from './Pages/Forums/Forums';
 import Games from './Pages/Games/Games';
 import Home from './Pages/Home/Home';
@@ -25,6 +26,7 @@ class App extends Component {
             <Route path="/pokedex" component={Pokedex} />
             <Route path="/forums" component={Forums} />
           </Container>
+          <Footer/>
         </div>
       </BrowserRouter>
     );

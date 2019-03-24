@@ -2,42 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './NewsFilters.module.css';
 
-import InteractiveLink from '../../../../shared/Components/Typography/InteractiveLink/InteractiveLink';
+import Subheading from '../../../../shared/Components/Typography/Subheading/Subheading';
+import Categories from './Categories/Categories';
+import Subcategories from './Subcategories/Subcategories';
+import YearMonthSelects from './YearMonthSelects/YearMonthSelects';
 
 const NewsFilters = props => {
   return (
     <div className={classes.newsFilters}>
-      <ul>
-        <li>All</li>
-        <li>Games</li>
-        <li>Anime</li>
-        <li>Manga</li>
-        <li>Media</li>
-      </ul>
+      
+      <Categories/>
 
-      <h4>Subcategories</h4>
-      <ul>
-        <li>Pokémon Sun &amp; Moon</li>
-        <li>Let's go Pikachu</li>
-        <li>Pokémon Go</li>
-      </ul>
-      <InteractiveLink href={'/'}>[ + ] 90 more...</InteractiveLink>
+      <Subcategories/>
 
-      <h4>By year</h4>
-      <select>
-        <option>Please select...</option>
-        <option>2019</option>
-        <option>2018</option>
-        <option>2017</option>
-      </select>
-
-      <h4>By month</h4>
-      <select>
-        <option>Please select...</option>
-        <option>March</option>
-        <option>February</option>
-        <option>January</option>
-      </select>
+      <YearMonthSelects/>
     </div>
   )
 };

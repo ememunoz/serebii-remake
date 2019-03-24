@@ -1,0 +1,11 @@
+.subcategoriesButtons {
+  list-style: none;
+}
+
+.subcategoriesButtons li {
+  margin-bottom: 1.6rem;
+}
+
+.title {
+  margin-bottom: 1.6rem;
+}

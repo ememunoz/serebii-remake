@@ -5,3 +5,11 @@
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
+.light {
+  color: rgba(50, 52, 56, 0.54);
+}
+
+.dark {
+  color: rgba(230, 239, 255, 0.54);
+}

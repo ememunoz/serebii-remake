@@ -2,13 +2,13 @@ import React, { Component, Fragment } from 'react';
 import styles from './App.module.css';
 
 import { BrowserRouter, Route } from 'react-router-dom';
-import Container from './Layout/Container/Container';
-import Footer from './Layout/Footer/Footer';
+import Container from  './shared/Components/Layout/Container/Container';
+import Footer from './shared/Components/Layout/Footer/Footer';
 import Forums from './Pages/Forums/Forums';
 import Games from './Pages/Games/Games';
 import Home from './Pages/Home/Home';
 import Media from './Pages/Media/Media';
-import Navbar from './Layout/Navbar/Navbar';
+import Navbar from './shared/Components/Layout/Navbar/Navbar';
 import News from './Pages/News/News';
 import Pokedex from './Pages/Pokedex/Pokedex';
 

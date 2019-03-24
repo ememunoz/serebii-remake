@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-import BodyText from '../../Components/Typography/BodyText/BodyText';
+import BodyText from '../../Typography/BodyText/BodyText';
 import Container from '../Container/Container';
-import DribbbleIcon from '../../Components/Icons/DribbleIcon';
-import FacebookIcon from '../../Components/Icons/FacebookIcon';
-import InstagramIcon from '../../Components/Icons/InstagramIcon';
-import InteractiveLink from '../../Components/Typography/InteractiveLink/InteractiveLink';
-import TwitterIcon from '../../Components/Icons/TwitterIcon';
+import DribbbleIcon from '../../Icons/DribbleIcon';
+import FacebookIcon from '../../Icons/FacebookIcon';
+import InstagramIcon from '../../Icons/InstagramIcon';
+import InteractiveLink from '../../Typography/InteractiveLink/InteractiveLink';
+import TwitterIcon from '../../Icons/TwitterIcon';
 
 const Footer = () => {
   return (

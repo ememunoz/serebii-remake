@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './NewsFilters.module.css';
 
-import InteractiveLink from '../../../../Components/Typography/InteractiveLink/InteractiveLink';
+import InteractiveLink from '../../../../shared/Components/Typography/InteractiveLink/InteractiveLink';
 
 const NewsFilters = props => {
   return (

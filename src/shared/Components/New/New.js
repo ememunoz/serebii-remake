@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './New.module.css';
-import mainNewsSource from '../../assets/legendary-palkia.jpg';
+import mainNewsSource from '../../../assets/legendary-palkia.jpg';
 
 import Heading from '../Typography/Heading/Heading';
 import Subheading from '../Typography/Subheading/Subheading';

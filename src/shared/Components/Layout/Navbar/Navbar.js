@@ -4,7 +4,7 @@ import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import NavItem from './NavItems/NavItem/NavItem';
 import NavItems from './NavItems/NavItems';
-import SearchIcon from '../../Components/Icons/SearchIcon';
+import SearchIcon from '../../Icons/SearchIcon';
 import Container from '../Container/Container';
 
 const Navbar = props => {

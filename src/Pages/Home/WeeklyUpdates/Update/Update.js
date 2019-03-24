@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Update.module.css';
-import Heading from '../../../../Components/Typography/Heading/Heading';
-import Subheading from '../../../../Components/Typography/Subheading/Subheading';
+import Heading from '../../../../shared/Components/Typography/Heading/Heading';
+import Subheading from '../../../../shared/Components/Typography/Subheading/Subheading';
 
 const Update = props => (
   <div className={styles.update} style={{ backgroundImage: `url(${props.src})` }}>

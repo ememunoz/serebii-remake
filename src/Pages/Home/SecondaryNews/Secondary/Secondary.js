@@ -2,10 +2,10 @@ import React from 'react';
 import './Secondary.css';
 import PropTypes from 'prop-types';
 
-import Heading from '../../../../Components/Typography/Heading/Heading';
-import InteractiveLink from '../../../../Components/Typography/InteractiveLink/InteractiveLink';
-import BodyText from '../../../../Components/Typography/BodyText/BodyText';
-import Subheading from '../../../../Components/Typography/Subheading/Subheading';
+import Heading from '../../../../shared/Components/Typography/Heading/Heading';
+import InteractiveLink from '../../../../shared/Components/Typography/InteractiveLink/InteractiveLink';
+import BodyText from '../../../../shared/Components/Typography/BodyText/BodyText';
+import Subheading from '../../../../shared/Components/Typography/Subheading/Subheading';
 
 const Secondary = props => (
   <div className='Secondary'>

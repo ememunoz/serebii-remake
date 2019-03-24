@@ -1,4 +1,4 @@
-.Update {
+.update {
   background-size: cover;
   border-radius: 5px;
   overflow: hidden;
@@ -6,7 +6,7 @@
   cursor: pointer;
 }
 
-.UpdateText {
+.updateText {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 16px;
@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-.UpdateTextSub {
+.updateTextSub {
   margin-top: 8px;
   color: rgba(255, 255, 255, 0.87);
 } 

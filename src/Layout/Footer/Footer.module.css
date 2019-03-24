@@ -22,6 +22,8 @@
 
 .background {
   background-color: #66AA72;
+  position: relative;
+  z-index: 100;
 }
 
 .socialMediaIcon {

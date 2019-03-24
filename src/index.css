@@ -29,12 +29,3 @@ body {
       padding: 0;
   }*/
 }
-
-/* Global styles */
-
-.details {
-  color: rgba(50, 52, 56, 0.54);
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}

@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Update.css';
+import styles from './Update.module.css';
 import Heading from '../../../../Components/Typography/Heading/Heading';
+import Subheading from '../../../../Components/Typography/Subheading/Subheading';
 
 const Update = props => (
-  <div className='Update' style={{ backgroundImage: `url(${props.src})` }}>
-    <div className='UpdateText'>
+  <div className={styles.update} style={{ backgroundImage: `url(${props.src})` }}>
+    <div className={styles.updateText}>
       <Heading type='h3'>{props.title}</Heading>
-      <p className='UpdateTextSub details'>{props.category}</p>
+      <Subheading className={styles.updateTextSub}>{props.category}</Subheading>
     </div>
   </div>
 )

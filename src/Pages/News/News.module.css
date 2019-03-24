@@ -1,0 +1,11 @@
+.newsContainer {
+  display: flex;
+}
+
+.newss {
+  padding: 4rem 0 4rem 4rem;
+}
+
+.newss>*:not(:last-child) {
+  margin-bottom: 4rem;
+}

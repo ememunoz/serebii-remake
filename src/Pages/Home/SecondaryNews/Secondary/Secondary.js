@@ -5,12 +5,13 @@ import PropTypes from 'prop-types';
 import Heading from '../../../../Components/Typography/Heading/Heading';
 import InteractiveLink from '../../../../Components/Typography/InteractiveLink/InteractiveLink';
 import BodyText from '../../../../Components/Typography/BodyText/BodyText';
+import Subheading from '../../../../Components/Typography/Subheading/Subheading';
 
 const Secondary = props => (
   <div className='Secondary'>
     <img className='SecondaryImg' src={props.src} />
-    <Heading className='SecondaryHeading' type='h3'>{props.title}</Heading>
-    <p className='details'>{props.category}</p>
+    <Heading type='h3'>{props.title}</Heading>
+    <Subheading>{props.category}</Subheading>
     <BodyText className='SecondaryBody'>{props.body}</BodyText>
     <InteractiveLink href='#'>Continue reading...</InteractiveLink>
   </div>

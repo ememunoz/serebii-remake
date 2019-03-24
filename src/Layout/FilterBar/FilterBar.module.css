@@ -1,0 +1,12 @@
+.filterBar {
+  background-color: #060D29;
+  color: #fff;
+  width: 100%;
+  padding: 4rem;
+  margin-left: -4rem;
+  position: relative;
+}
+
+.filterOptions {
+  position: fixed;
+}

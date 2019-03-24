@@ -18,7 +18,7 @@ class App extends Component {
       <BrowserRouter>
         <div className={styles.appBackground}>
           <Navbar />
-          <Container>
+          <Container style={{marginTop: 92}}>
             <Route exact path="/" component={Home} />
             <Route path="/news" component={News} />
             <Route path="/games" component={Games} />

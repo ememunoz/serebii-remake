@@ -12,6 +12,11 @@
 
 .background {
   background-color: #66AA72;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
 }
 
 .logo, .logo:link, .logo:visited {

@@ -1,11 +1,16 @@
-.newsContainer {
+.newsComponent {
   display: flex;
 }
 
-.newss {
+.newsContainer {
   padding: 4rem 0 4rem 4rem;
+  flex: 2.5; /*1.618 for golden ratio */
 }
 
-.newss>*:not(:last-child) {
+.filterContainer {
+  flex: 1;
+}
+
+.newsContainer>*:not(:last-child) {
   margin-bottom: 4rem;
 }

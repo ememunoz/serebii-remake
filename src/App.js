@@ -1,34 +1,34 @@
 import React, { Component, Fragment } from 'react';
-import styles from './App.module.css';
-
 import { BrowserRouter, Route } from 'react-router-dom';
-import Container from  './shared/Components/Layout/Container/Container';
-import Footer from './shared/Components/Layout/Footer/Footer';
+import { GlobalStyles, theme } from './style';
+import { ThemeProvider } from 'styled-components';
+
 import Forums from './Pages/Forums/Forums';
 import Games from './Pages/Games/Games';
 import Home from './Pages/Home/Home';
 import Media from './Pages/Media/Media';
-import Navbar from './shared/Components/Layout/Navbar/Navbar';
 import News from './Pages/News/News';
 import Pokedex from './Pages/Pokedex/Pokedex';
+import Layout from './Components/Layout/Layout';
 
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className={styles.appBackground}>
-          <Navbar />
-          <Container style={{marginTop: 92}}>
-            <Route exact path="/" component={Home} />
-            <Route path="/news" component={News} />
-            <Route path="/games" component={Games} />
-            <Route path="/media" component={Media} />
-            <Route path="/pokedex" component={Pokedex} />
-            <Route path="/forums" component={Forums} />
-          </Container>
-          <Footer/>
-        </div>
-      </BrowserRouter>
+      <Fragment>
+        <GlobalStyles />
+        <ThemeProvider theme={theme}>
+          <BrowserRouter>
+            <Layout>
+              <Route exact path="/" component={Home} />
+              <Route path="/news" component={News} />
+              <Route path="/games" component={Games} />
+              <Route path="/media" component={Media} />
+              <Route path="/pokedex" component={Pokedex} />
+              <Route path="/forums" component={Forums} />
+            </Layout>
+          </BrowserRouter>
+        </ThemeProvider>
+      </Fragment>
     );
   }
 }

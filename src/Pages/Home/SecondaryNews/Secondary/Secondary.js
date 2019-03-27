@@ -2,17 +2,17 @@ import React from 'react';
 import './Secondary.css';
 import PropTypes from 'prop-types';
 
-import Heading from '../../../../shared/Components/Typography/Heading/Heading';
-import InteractiveLink from '../../../../shared/Components/Typography/InteractiveLink/InteractiveLink';
-import BodyText from '../../../../shared/Components/Typography/BodyText/BodyText';
-import Subheading from '../../../../shared/Components/Typography/Subheading/Subheading';
+import { Heading3 } from '../../../../Components/Typography/Headings';
+import InteractiveLink from '../../../../Components/Typography/InteractiveLink/InteractiveLink';
+import BodyText from '../../../../Components/Typography/BodyText';
+import Subheading from '../../../../Components/Typography/Subheading';
 
-const Secondary = props => (
+const Secondary = ({ body, category, src, title }) => (
   <div className='Secondary'>
-    <img className='SecondaryImg' src={props.src} />
-    <Heading type='h3'>{props.title}</Heading>
-    <Subheading>{props.category}</Subheading>
-    <BodyText className='SecondaryBody'>{props.body}</BodyText>
+    <img className='SecondaryImg' src={src} />
+    <Heading3>{title}</Heading3>
+    <Subheading>{category}</Subheading>
+    <BodyText className='SecondaryBody'>{body}</BodyText>
     <InteractiveLink href='#'>Continue reading...</InteractiveLink>
   </div>
 )

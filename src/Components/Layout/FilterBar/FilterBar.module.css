@@ -1,10 +1,10 @@
 .filterBar {
-  background-color: #060D29;
-  color: #fff;
+  color: #060D29;
   width: 100%;
   padding: 4rem;
   margin-left: -4rem;
   position: relative;
+  flex-shrink: 1;
 }
 
 .filterOptions {

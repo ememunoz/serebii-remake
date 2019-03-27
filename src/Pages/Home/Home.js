@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 
-import New from '../../shared/Components/New/New';
+import New from '../../Components/New/New';
 import SecondaryNews from './SecondaryNews/SecondaryNews';
 import WeeklyUpdates from './WeeklyUpdates/WeeklyUpdates';
 

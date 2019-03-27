@@ -1,15 +1,11 @@
-.subheading {
-  color: rgba(50, 52, 56, 0.54);
+import styled from 'styled-components';
+
+const Subheading = styled.p`
   font-size: 1.2rem;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-.light {
   color: rgba(50, 52, 56, 0.54);
-}
+`;
 
-.dark {
-  color: rgba(230, 239, 255, 0.54);
-}
+export default Subheading;

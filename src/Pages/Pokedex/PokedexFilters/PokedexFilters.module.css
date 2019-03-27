@@ -1,0 +1,7 @@
+.pokedexFilters {
+  font-size: 1.6rem;
+}
+
+.pokedexFilters>*:not(:last-child) {
+  margin-bottom: 6.4rem;
+}

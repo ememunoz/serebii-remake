@@ -1,0 +1,12 @@
+.pokedex {
+  display: flex;
+}
+
+.filterContainer {
+  flex: 1;
+}
+
+.pokedexContainer {
+  flex: 2.5;
+  padding: 4rem 0 4rem 4rem;
+}

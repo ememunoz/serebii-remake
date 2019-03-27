@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './YearMonthSelects.module.css';
 
-import Subheading from '../../../../../shared/Components/Typography/Subheading/Subheading';
+import Subheading from '../../../../../Components/Typography/Subheading';
 
 const YearMonthSelects = props => {
   return (
     <div className={classes.yearMonthSelects}>
-      <Subheading theme='dark'>By year</Subheading>
+      <Subheading>By year</Subheading>
       <select>
         <option>Please select...</option>
         <option>2019</option>
@@ -15,7 +15,7 @@ const YearMonthSelects = props => {
         <option>2017</option>
       </select>
 
-      <Subheading theme='dark'>By month</Subheading>
+      <Subheading>By month</Subheading>
       <select>
         <option>Please select...</option>
         <option>March</option>

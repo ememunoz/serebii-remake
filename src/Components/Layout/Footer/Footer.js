@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 
-import BodyText from '../../Typography/BodyText/BodyText';
+import BodyText from '../../Typography/BodyText';
 import Container from '../Container/Container';
 import DribbbleIcon from '../../Icons/DribbleIcon';
 import FacebookIcon from '../../Icons/FacebookIcon';
@@ -15,7 +15,7 @@ const Footer = () => {
       <Container style={{ backgroundColor: 'transparent' }}>
         <div className={styles.footer}>
           <div className={styles.text}>
-            <BodyText>&copy; Designed by&nbsp;</BodyText>
+            <BodyText>&copy; Designed and coded by&nbsp;</BodyText>
             <InteractiveLink
               href='https://dribbble.com/marcomunooz'
               newTab
@@ -38,9 +38,7 @@ const Footer = () => {
               <DribbbleIcon className={styles.socialMediaIcon} />
             </InteractiveLink></li>
           </ul>
-
         </div>
-
       </Container>
     </div>
   )

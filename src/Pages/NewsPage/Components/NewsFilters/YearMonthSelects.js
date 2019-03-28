@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './YearMonthSelects.module.css';
 
-import Subheading from '../../../../../Components/Typography/Subheading';
+import Subheading from '../../../../Components/Typography/Subheading';
 
 const YearMonthSelects = props => {
   return (
-    <div className={classes.yearMonthSelects}>
+    <div>
       <Subheading>By year</Subheading>
       <select>
         <option>Please select...</option>

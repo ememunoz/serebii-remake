@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Button = styled.button`
   border: none;
   background: none;
-  color: #0CA0D8;
+  color: ${props => props.theme.accentColor};
   font-size: 1.6rem;
   font-weight: bold;
   position: relative;

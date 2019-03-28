@@ -6,7 +6,7 @@ import Container from '../Container';
 import Logo from './NavItems/Logo';
 
 const NavbarWrapper = styled.div`
-  background-color: #66AA72;
+  background-color: ${props => props.theme.primaryColor};
   position: fixed;
   top: 0;
   left: 0;

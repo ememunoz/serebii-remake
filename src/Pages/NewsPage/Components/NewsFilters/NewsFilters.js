@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './NewsFilters.module.css';
+import styled from 'styled-components';
 
 import Categories from '../../../../Components/UI/Categories/Categories';
-import Subcategories from './Subcategories/Subcategories';
-import YearMonthSelects from './YearMonthSelects/YearMonthSelects';
+import Subcategories from './Subcategories';
+import YearMonthSelects from './YearMonthSelects';
+
+const NewsFiltersWrapper = styled.div`
+  font-size: 1.6rem;
+  &>*:not(:last-child) {
+    margin-bottom: 6.4rem;
+  }
+`;
 
 const NewsFilters = props => {
   return (
-    <div className={classes.newsFilters}>
+    <NewsFiltersWrapper>
       <Categories
         items={[
           { id: 'all', name: 'All' },
@@ -22,7 +29,7 @@ const NewsFilters = props => {
       />
       <Subcategories />
       <YearMonthSelects />
-    </div>
+    </NewsFiltersWrapper>
   )
 };
 

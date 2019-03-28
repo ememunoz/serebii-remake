@@ -7,7 +7,7 @@ import SocialMediaButtons from './SocialMediaButtons';
 import ExternalLink from '../../UI/ExternalLink';
 
 const FooterWrapper = styled.footer`
-  background-color: #66AA72;
+  background-color: ${props => props.theme.primaryColor};
   position: relative;
   z-index: 100;
   color: white;

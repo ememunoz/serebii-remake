@@ -1,7 +1,0 @@
-.newsFilters {
-  font-size: 1.6rem;
-}
-
-.newsFilters>*:not(:last-child) {
-  margin-bottom: 6.4rem;
-}

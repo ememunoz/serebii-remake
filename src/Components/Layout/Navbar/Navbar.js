@@ -1,29 +1,37 @@
 import React from 'react';
-import styles from './Navbar.module.css';
+import styled from 'styled-components';
 
-import { Link } from 'react-router-dom';
-import NavItem from './NavItems/NavItem/NavItem';
 import NavItems from './NavItems/NavItems';
-import SearchIcon from '../../Icons/SearchIcon';
-import Container from '../Container/Container';
+import Container from '../Container';
+import Logo from './NavItems/Logo';
+
+const NavbarWrapper = styled.div`
+  background-color: #66AA72;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  color: white;
+`;
+
+const NavbarLayout = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
+`;
 
 const Navbar = props => {
   return (
-    <div className={styles.background}>
-      <Container style={{backgroundColor: 'transparent'}}>
-        <nav className={styles.navbar}>
-          <Link to='/' className={styles.logo}>Serebii.net</Link>
-          <NavItems>
-            <NavItem href='/news'>News</NavItem>
-            <NavItem href='/games'>Games</NavItem>
-            <NavItem href='/media'>Media</NavItem>
-            <NavItem href='/pokedex'>Pokédex</NavItem>
-            <NavItem href='/forums'>Forums</NavItem>
-            <NavItem href='#'><SearchIcon style={{ height: '16px' }} /></NavItem>
-          </NavItems>
-        </nav>
+    <NavbarWrapper>
+      <Container style={{ backgroundColor: 'transparent' }}>
+        <NavbarLayout>
+          <Logo />
+          <NavItems />
+        </NavbarLayout>
       </Container>
-    </div >
+    </NavbarWrapper >
   );
 }
 

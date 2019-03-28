@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './News.module.css';
 
-import FilterBar from '../../Components/Layout/FilterBar/FilterBar';
-import New from '../../Components/New/New';
+import FilterBar from '../../Components/Layout/FilterBar';
+import News from '../../Components/News/News';
 import NewsFilters from './Components/NewsFilters/NewsFilters';
 
-class News extends Component {
+class NewsPage extends Component {
   render() {
     return (
       <div className={styles.newsComponent}>
@@ -16,15 +16,15 @@ class News extends Component {
           </FilterBar>
         </div>
         <div className={styles.newsContainer}>
-          <New />
-          <New />
+          <News />
+          <News />
         </div>
       </div>
     );
   }
 }
 
-News.propTypes = {
+NewsPage.propTypes = {
 }
 
-export default News;
+export default NewsPage;

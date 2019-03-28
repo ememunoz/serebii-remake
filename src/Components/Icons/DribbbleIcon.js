@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const DribbbleIcon = ({ className, style }) => (
+const DribbbleIcon = () => (
   <svg
-    className={className}
-    style={style}
+    style={{ height: '100%' }}
     aria-hidden='true'
     focusable='false'
     role='img'
@@ -18,10 +16,5 @@ const DribbbleIcon = ({ className, style }) => (
     </path>
   </svg>
 );
-
-DribbbleIcon.propTypes = {
-  className: PropTypes.string,
-  style: PropTypes.object
-}
 
 export default DribbbleIcon;

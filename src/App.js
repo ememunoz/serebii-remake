@@ -7,7 +7,7 @@ import Forums from './Pages/Forums/Forums';
 import Games from './Pages/Games/Games';
 import Home from './Pages/Home/Home';
 import Media from './Pages/Media/Media';
-import News from './Pages/News/News';
+import NewsPage from './Pages/NewsPage/NewsPage';
 import Pokedex from './Pages/Pokedex/Pokedex';
 import Layout from './Components/Layout/Layout';
 
@@ -20,7 +20,7 @@ class App extends Component {
           <BrowserRouter>
             <Layout>
               <Route exact path="/" component={Home} />
-              <Route path="/news" component={News} />
+              <Route path="/news" component={NewsPage} />
               <Route path="/games" component={Games} />
               <Route path="/media" component={Media} />
               <Route path="/pokedex" component={Pokedex} />

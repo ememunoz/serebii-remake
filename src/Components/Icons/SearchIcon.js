@@ -1,9 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const SearchIcon = ({ style }) => (
+const SearchIcon = () => (
   <svg
-    style={style}
+    style={{ height: '100%' }}
     aria-hidden='true'
     focusable='false'
     role='img'
@@ -16,10 +15,6 @@ const SearchIcon = ({ style }) => (
     >
     </path>
   </svg>
-)
-
-SearchIcon.propTypes = {
-  style: PropTypes.object
-}
+);
 
 export default SearchIcon;

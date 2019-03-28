@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Background from './Background/Background';
-import Container from './Container/Container';
+import Background from './Background';
+import Container from './Container';
 import Footer from './Footer/Footer';
 import Navbar from './Navbar/Navbar';
 

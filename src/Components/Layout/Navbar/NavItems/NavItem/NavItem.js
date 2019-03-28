@@ -1,15 +1,15 @@
 import React from 'react';
-import './NavItem.css';
+import classes from './NavItem.module.css';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
-const NavItem = props => {
-  const active = !!props.active ? 'active' : '';
+const NavItem = ({ active, children, href }) => {
+  const _active = !!active ? 'active' : '';
   return (
-  <li className={'navItem'}>
-    <NavLink className={`navItemLink ${active}`} to={props.href}>{props.children}</NavLink>
-  </li>
-)
+    <li>
+      <NavLink className={`${classes.navItemLink} ${_active}`} to={href}>{children}</NavLink>
+    </li>
+  )
 };
 
 NavItem.propTypes = {

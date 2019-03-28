@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classes from './Subcategories.module.css';
 
 import Checkbox from '../../../../../Components/UI/Checkbox/Checkbox';
-import InteractiveLink from '../../../../../Components/Typography/InteractiveLink/InteractiveLink';
+import LinkButton from '../../../../../Components/UI/Buttons/LinkButton';
 import Subheading from '../../../../../Components/Typography/Subheading';
 
 
@@ -16,7 +16,7 @@ const Subcategories = props => {
         <li><Checkbox>Let's go Pikachu</Checkbox></li>
         <li><Checkbox>Pokémon Go</Checkbox></li>
       </ul>
-      <InteractiveLink href={'/'}>[ + ] 90 more...</InteractiveLink>
+      <LinkButton>[ + ] 90 more...</LinkButton>
     </div>
   )
 };

@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const FacebookIcon = ({ className,style }) => (
+const FacebookIcon = () => (
   <svg
-    className={className}
-    style={style}
+    style={{ height: '100%' }}
     aria-hidden='true'
     focusable='false'
     role='img'
@@ -18,11 +16,5 @@ const FacebookIcon = ({ className,style }) => (
     </path>
   </svg>
 );
-
-
-FacebookIcon.propTypes = {
-  className: PropTypes.string,
-  style: PropTypes.object
-}
 
 export default FacebookIcon;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import backgroundImg from '../../../assets/Pokemon_Forest2.png';
+import backgroundImg from '../../assets/Pokemon_Forest2.png';
 
-export default styled.div`
+const Background = styled.div`
   &:before {
     content: '';
     position: fixed;
@@ -16,3 +16,5 @@ export default styled.div`
     background-image: linear-gradient( rgba(57, 57, 57, 0.5), rgba(57, 57, 57, 0.5)), url(${backgroundImg})
   }
 `
+
+export default Background;

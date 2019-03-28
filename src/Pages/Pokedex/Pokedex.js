@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classes from './Pokedex.module.css';
-import FilterBar from '../../Components/Layout/FilterBar/FilterBar';
+import FilterBar from '../../Components/Layout/FilterBar';
 import PokedexTable from './PokedexTable/PokedexTable';
 import PokedexFilters from './PokedexFilters/PokedexFilters';
 

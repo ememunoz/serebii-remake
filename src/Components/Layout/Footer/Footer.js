@@ -1,46 +1,46 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import styled from 'styled-components';
 
 import BodyText from '../../Typography/BodyText';
-import Container from '../Container/Container';
-import DribbbleIcon from '../../Icons/DribbleIcon';
-import FacebookIcon from '../../Icons/FacebookIcon';
-import InstagramIcon from '../../Icons/InstagramIcon';
-import InteractiveLink from '../../Typography/InteractiveLink/InteractiveLink';
-import TwitterIcon from '../../Icons/TwitterIcon';
+import Container from '../Container';
+import SocialMediaButtons from './SocialMediaButtons';
+import ExternalLink from '../../UI/ExternalLink';
+
+const FooterWrapper = styled.footer`
+  background-color: #66AA72;
+  position: relative;
+  z-index: 100;
+  color: white;
+`;
+
+const FooterLayout = styled.div`
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const WhiteText = styled.span`
+  color: white;
+`;
 
 const Footer = () => {
   return (
-    <div className={styles.background}>
+    <FooterWrapper>
       <Container style={{ backgroundColor: 'transparent' }}>
-        <div className={styles.footer}>
-          <div className={styles.text}>
-            <BodyText>&copy; Designed and coded by&nbsp;</BodyText>
-            <InteractiveLink
-              href='https://dribbble.com/marcomunooz'
-              newTab
-              type='white'
-            >
-              Marco Muñoz
-          </InteractiveLink>
-          </div>
-          <ul className={styles.socialMedia}>
-            <li><InteractiveLink type='white' newTab href='https://www.facebook.com/'>
-              <FacebookIcon className={styles.socialMediaIcon} />
-            </InteractiveLink></li>
-            <li><InteractiveLink type='white' newTab href='https://www.twitter.com/'>
-              <TwitterIcon className={styles.socialMediaIcon} />
-            </InteractiveLink></li>
-            <li><InteractiveLink type='white' newTab href='https://www.instagram.com/'>
-              <InstagramIcon className={styles.socialMediaIcon} />
-            </InteractiveLink></li>
-            <li><InteractiveLink type='white' newTab href='https://dribbble.com/marcomunooz'>
-              <DribbbleIcon className={styles.socialMediaIcon} />
-            </InteractiveLink></li>
-          </ul>
-        </div>
+        <FooterLayout>
+          <BodyText>
+            &copy; Designed and coded by&nbsp;
+            <WhiteText>
+              <ExternalLink href='https://dribbble.com/marcomunooz' >
+                Marco Muñoz
+              </ExternalLink>
+            </WhiteText>
+          </BodyText>
+          <SocialMediaButtons />
+        </FooterLayout>
       </Container>
-    </div>
+    </FooterWrapper>
   )
 };
 

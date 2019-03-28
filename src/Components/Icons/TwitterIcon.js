@@ -1,10 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const TwitterIcon = ({ className, style }) => (
+const TwitterIcon = () => (
   <svg
-    className={className}
-    style={style}
+    style={{ height: '100%' }}
     aria-hidden='true'
     focusable='false'
     role='img'
@@ -18,10 +16,5 @@ const TwitterIcon = ({ className, style }) => (
     </path>
   </svg>
 );
-
-TwitterIcon.propTypes = {
-  className: PropTypes.string,
-  style: PropTypes.object
-}
 
 export default TwitterIcon;
